@@ -1,3 +1,28 @@
+#EmpleAPP.
+
+EmpleAPP es una plataforma donde se pueden encontart ofertas laborales. En esta se pueden aplicar filtros para especificar criterios de busqueda para reducir el numero de ofertas a los intereses particulares del usuario.
+
+A EmpleAPP se puede acceder a traves de dispositivos moviles y de PCs, debido a que esta diseñado para adaptarse a cualquier tamaño de pantalla y así dar la mejor experiencia desde cualquier dispositivo. 
+
+##Este proyecto fue creado con [Create React App](https://github.com/facebook/create-react-app).
+
+Para proceder con la ejecucion de la aplicacion se debe instalar previamente las dependencias necesarias para lo cual se ejecuta el comando:
+
+### `npm install`
+
+Una vez finalizada la instalacion de dependencias se procede ejecutar la aplicacion, para lo cual se usa el comando:
+
+### `npm start`
+
+Una vez termine de compilar el proyecto se abrira una ventana en el navegador donde la aplicacion quedara interactuable para el usuario.
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

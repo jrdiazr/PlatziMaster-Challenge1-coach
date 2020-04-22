@@ -1,0 +1,137 @@
+.job-container {
+	display: grid;
+	grid-template-columns: 1fr 4fr 4fr;
+	grid-template-rows: 1fr;
+	width: 70%;
+	border-radius: 5px;
+	background-color: white;
+	padding: 25px;
+	margin-bottom: 3vh;
+}
+.cyan-border {
+	border-left: 5px solid hsl(180, 29%, 50%);
+}
+.job-info {
+	grid-column-end: span 1;
+	font-size: 12px;
+	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.job-logo {
+	grid-column-end: span 1;
+	width: 100%;
+}
+.job-info__header {
+	display: flex;
+	align-items: center;
+}
+.job-info__header h3 {
+	margin: 0px;
+	color: hsl(180, 29%, 50%);
+	margin-right: 10px;
+}
+.job-info__header span {
+	margin-left: 10px;
+	border-radius: 20px;
+	padding: 5px 10px;
+}
+.new {
+	background-color: hsl(180, 29%, 50%);
+	color: white;
+}
+.featured {
+	background-color: black;
+	color: white;
+}
+.job-title {
+	margin: 5px 0px;
+}
+.job-details {
+	display: flex;
+}
+.job-details span {
+	margin-right: 10px;
+	color: gray;
+}
+.job-languages-list {
+	display: flex;
+	list-style: none;
+	justify-content: flex-end;
+	align-items: center;
+	/* margin-right: 20px; */
+}
+.job-languages-list li {
+	margin-left: 10px;
+}
+.language {
+	font-size: 12px;
+	border-radius: 5px;
+	color: hsl(180, 29%, 50%);
+	font-weight: 600;
+	background-color: hsl(180, 31%, 95%);
+	padding: 10px;
+	border: none;
+	outline: none;
+}
+
+.language:hover {
+	background-color: hsl(180, 29%, 50%);
+	color: hsl(180, 31%, 95%);
+	cursor: pointer;
+}
+
+/* Media Querys */
+@media (max-width: 1024px) {
+	.job-container {
+		width: 80%;
+		grid-template-columns: 100%;
+		grid-template-rows: 1fr 1fr;
+		margin-bottom: 5vh;
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.job-logo {
+		grid-column-end: 1;
+		position: absolute;
+		width: 8vw;
+		top: -4vw;
+		left: 5vw;
+		margin-bottom: 1vh;
+	}
+	.job-info {
+		min-width: 90%;
+		margin: 10px;
+		margin-top: 5vh;
+	}
+	.job-title {
+		font-size: 15px;
+	}
+	.job-languages-list {
+		min-width: 90%;
+		border-top: 1px solid darkgray;
+		margin: 0px;
+		padding: 0px;
+		padding-top: 2vh;
+		margin-top: 1vh;
+		grid-column-end: 1;
+		grid-row-end: span 1;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+	.job-languages-list li {
+		margin-left: 0px;
+		margin-right: 20px;
+		margin-top: 10px;
+	}
+	.language {
+		font-size: 15px;
+	}
+	.job-info__header h3 {
+		font-size: 10px;
+		margin: 0px;
+	}
+}
